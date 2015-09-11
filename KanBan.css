@@ -1,0 +1,23 @@
+#kanban-header {
+    width: 100%;
+    height: 3em;
+    background-color: burlywood;
+}
+
+.board-segment {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+}
+
+#to-do {
+    background-color: #FFFFCC;
+}
+
+#doing {
+    background-color: #CCFFCC;
+}
+
+#done {
+    background-color: #CCFFFF;
+}
