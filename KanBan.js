@@ -7,7 +7,7 @@ function getBoards() {
 }
  
 function showClick(event) {
-    alert('X: ' + event.clientX + 'Y: '+ event.clientY);
+    //alert('X: ' + event.clientX + 'Y: '+ event.clientY);
 }
 
 function setupBoards() {
@@ -18,4 +18,8 @@ function setupBoards() {
 
 function addStickyNote(event) {
     var newNote = document.createElement('DIV');
+    newNote.className = 'sticky-notes';
+    newNote.style.top = event.clientY;
+    newNote.style.left = event.clientY;
+
 }
