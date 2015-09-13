@@ -14,6 +14,7 @@ function setupBoards() {
     getBoards().forEach(function (eachBoard) {
         eachBoard.addEventListener('click', showClick, false);
     });
+    //KanBanPresenter.initialize();
 }
 
 function addStickyNote(event) {

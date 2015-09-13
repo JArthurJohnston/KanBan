@@ -18,6 +18,7 @@ describe('wires up view correctly', function() {
         doneDiv = document.createElement('DIV');
         headerDiv = document.createElement('DIV');
         addButtonDiv = document.createElement('DIV');
+        addButtonDiv.id = 'add-note-button';
         mockBody.appendChild(headerDiv);
         headerDiv.appendChild(addButtonDiv);
         mockBody.appendChild(toDoDiv);
@@ -30,7 +31,10 @@ describe('wires up view correctly', function() {
         document.body.removeChild(mockBody);
     });
 
-    it('should add event handler to add note button', function(){
+    it('should add onclick to add note button', function(){
+        expect(addButtonDiv.onclick).toBe('undefined');
+        KanBanPresenter.initialize();
+        expect(addButtonDiv.onclick).toBe('function');
 
     });
 });
